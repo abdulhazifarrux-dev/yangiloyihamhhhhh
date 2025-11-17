@@ -1,0 +1,91 @@
+/* Global sozlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f6fa;
+    background-image: url(./bbb.avif);
+    background-size: cover;        /* Rasimni ekran bo‘ylab cho‘zadi */
+    background-position: center;   /* Markazga joylash */
+    background-repeat: no-repeat;  /* Takrorlanmasin */
+    background-attachment: fixed;
+}
+
+/* Header dizayni */
+.bosh {
+    background: linear-gradient(135deg, #f77ff7, #c3bec5);
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Header umumiy qismi */
+.umumiy {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Chap tomondagi nom */
+.nom h1 {
+    color: #fff;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+/* Navigatsiya */
+.yonal {
+    display: flex;
+    gap: 25px;
+}
+
+.yonal a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+/* Hover effekti */
+.yonal a:hover {
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
+}
+
+.sentr {
+    display: flex;
+    justify-content: center;   /* gorizontal o‘rtaga */
+    align-items: center;       /* vertikal o‘rtaga */
+    height: 50vh;             /* to‘liq ekran balandligi */
+    text-align: center;
+}
+
+.sentr h1 {
+    color: #eca3dc;
+    font-size: 200px;
+}
+
+
+
+/* Responsive — telefonlar uchun */
+@media (max-width: 768px) {
+    .umumiy {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .yonal {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sentr h1 {
+        font-size: 60px;
+    }
+}
