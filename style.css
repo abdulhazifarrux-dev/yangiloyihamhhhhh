@@ -47,6 +47,7 @@
       box-shadow: 0 10px 30px rgba(205,120,170,0.12);
       position:relative;overflow:hidden;
       backdrop-filter: blur(6px);
+      margin-top: 150px;
 
 
     }
